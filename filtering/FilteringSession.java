@@ -3,7 +3,7 @@ import ij.*;
 public class FilteringSession {
 
 	/*******************************************************************************
-	 * 
+	 *
 	 * E D G E   D E T E C T O R   S E C T I O N
 	 *
 	 ******************************************************************************/
@@ -246,7 +246,7 @@ public class FilteringSession {
 		double colout[] = new double[ny];
 		for (int x = 0; x < nx; x++) {
 			out.getColumn(x, colin);
-			doAverage5_recursive(col	in, colout);
+			doAverage5_recursive(colin, colout);
 			out.putColumn(x, colout);
 		}
 		return out;
